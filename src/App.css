@@ -1,0 +1,147 @@
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.content-area{
+  /* transform: translateY(50%); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  min-height: 100vh;
+  background-color: #e1e1e1;
+}
+.content-area h2{
+  padding: 25px 0px;
+}
+.search-area{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-area input{
+  border: none;
+  width: 50%;
+  padding: 10px 50px;
+  outline: none;
+  border-radius: 2px;
+}
+.search-area button{
+  /* width: 130px; */
+  padding: 10px 50px;
+  outline: none;
+  border: none;
+}
+.btn-grad {background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+/* Style the table itself */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders between cells are merged */
+  margin: 20px 0;
+}
+
+/* Style the table header */
+th {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px; /* Padding for spacing */
+  text-align: left; /* Left-align text in headers */
+}
+
+/* Style the table cells */
+td {
+  border: 1px solid #ddd; /* Light grey border for cells */
+  padding: 10px; /* Padding inside cells */
+  text-align: left; /* Align text to the left */
+}
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+/* Add a hover effect on rows */
+tr:hover {
+  background-color: #f2f2f2; /* Light grey background when hovering */
+}
+
+/* Style the buttons */
+button {
+  background-color: #4CAF50; /* Green background for buttons */
+  color: white; /* White text */
+  border: none; /* Remove default button border */
+  padding: 8px 16px; /* Padding for buttons */
+  margin: 5px; /* Space between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 4px; /* Rounded corners for buttons */
+}
+.red{
+  background-color: tomato;
+}
+/* Hover effect for buttons */
+button:hover:not(.red) {
+  background-color: #45a049; /* Darker green when hovered */
+}
+.red:hover{
+  background-color: rgb(253, 81, 51);
+}
+
+/* Optional: Style the table with a border */
+table, th, td {
+  border: 1px solid #cdcbcb;
+}
+.modal{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0,0.7);
+  z-index: 1;
+}
+.modal .modal-content{
+  width: 30%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e2e1e1;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 35%;
+  border-radius: 5px;
+  position: relative;
+}
+.modal-content input{
+  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  outline:none;
+  margin: 10px 0;
+}
+.modal-content .red{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
