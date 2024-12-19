@@ -127,14 +127,14 @@ function App() {
   <div className="modal">
     <div className="modal-content">
       <button onClick={closeModal} className="red">&times;</button>
-      <h2>Add New User</h2>
+      <h2>{userData.id ?"Update User":"Add User"}</h2>
       <label htmlFor="name">Full Name</label>
       <input type="text" value={userData.name} name="name" onChange={handleuserData} id="name" />
       <label htmlFor="age">Age</label>
       <input type="text" name="age" value={userData.age} onChange={handleuserData} id="age" />
       <label htmlFor="location">City</label>
       <input type="text" name="location" value={userData.location} onChange={handleuserData} id="location" />
-      <button className="addUser" onClick={handleSubmit}>Add User</button>
+      <button className="addUser" onClick={handleSubmit}>{userData.id?"update":"Add User"}</button>
     </div>
   </div>
 )}
